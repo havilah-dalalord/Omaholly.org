@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omaholly</title>
+    <link rel="stylesheet" href="bootstrap/bootstrapcss.css">
+    <link rel="stylesheet" href="Font_6/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+     rel="shortcut icon"
+     href="img/icon.png"
+     type="image/x-icon"
+   />
+</head>
+<body onload="prompt('Hey there, Welcome to Omaholly. What is your name ?');">
+    <header>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/omaholly.png" width="210" height="100" alt=""></a>
+                <button class="navbar-toggler border-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"
+                    aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                    <i style="color: gold;" class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarID">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item mt-2">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown mt-2">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Novels <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                                <ul class="dropdown-menu">
+                                    <!-- <li><a class="dropdown-item" href="Novels/standalone.html">Standalone</a></li> -->
+                                    <li><a class="dropdown-item" href="Novels/series.html">Series</a></li>
+                                    <li><a class="dropdown-item" href="Novels/short_stories.html">Short Stories</a></li>
+                                    <li><a class="dropdown-item" href="#">Other</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown mt-2">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Literature Analysis <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Poems</a></li>
+                                    <li><a class="dropdown-item" href="#">Plays</a></li>
+                                    <li><a class="dropdown-item" href="#">Prose</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown mt-2">
+                                <a class="nav-link" role="button" data-bs-toggle="dropdown" href="#">Spelling Bee Lessons <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="Spelling bee/book1.html">Book One</a></li>
+                                    <li><a class="dropdown-item" href="#">Book Two</a></li>
+                                </ul>
+                            </li>
+
+                        <!-- <div class="buttons">
+                            <a class="btn btn_sign sign btn-sm " href="gets.html" role="button">Get Started</a>
+                            <a class="btn btn_sign log btn-sm" href="login.html" role="button">Login</a>
+
+                        </div> -->
+                      </ul>
+                      </nav>
+                    </header>
+
+                    <main>
+                        <section class="home">
+                            <div class="container container-home">
+                                <h1 class="home-brew">Get the best books in the world</h1>
+                                <!-- <div class="search">
+                                    <input type="search" class="search_bar" placeholder="Search for any book" id="search">
+                                    <a class="btn-connect search_btn" href="#" role="button"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                </div> -->
+                                <button class="facebook btn-connect">
+                                  <a href="https://www.facebook.com/OmahollyC?mibextid=ZbWKwL">
+                                  <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                    </svg> -->
+                                    <i class="fa-brands fa-facebook control"></i>
+                                  </a>
+                                </button>
+                                <button class="twitter btn-connect">
+                                      <i class="fa-brands fa-twitter control"></i>
+                                </button>
+                                <button class="snapchat btn-connect ">
+                                    <i class="fa-brands fa-snapchat control"></i>
+                                </button>
+                            </div>
+                        </section>
+                        <section id="famous_books" class="famous_books">
+                            <section id="services" class="full-height px-lg-5 pt-5">
+                                <div class="container">
+
+                                  <!-- <div class="row pb-4">
+                                    <div class="col-lg-8">
+                                      <h6 class="text-brand font">BOOKS</h6>
+                                      <h1 class="text-brand font">Books of the week</h1>
+                                    </div>
+                                  </div> -->
+
+                                  <div id="search">
+                                    <div class="w3-container">
+                                        <input class="w3-input w3-border w3-padding" type="text" placeholder="Search for books to filter.." id="myInput" onkeyup="myFunction()">
+
+                                        <table class="w3-table-all w3-margin-top" id="myTable">
+                                          <tr>
+                                            <th style="width:33%;">Name</th>
+                                            <th style="width:33%;">Author</th>
+                                            <th style="width:33%;">Genre</th>
+                                          </tr>
+                                          <tr>
+                                            <td><a href="Novels/short_stories.html">After the wait</a></td>
+                                            <td>Omaholly</td>
+                                            <td>Short Stories</td>
+                                          </tr>
+                                          <tr>
+                                            <td><a href="OMAHOLLY BOOKS/GHOST (The Shadow in the Dark).pdf" target="_blank">Ghost (The Shadow in the Dark)</a></td>
+                                            <td>Omaholly</td>
+                                            <td>Novel</td>
+                                          </tr>
+                                          <tr>
+                                            <td><a href="OMAHOLLY BOOKS/WILD (NO ROOM FOR THE WEAK) .pdf" target="_blank">Wild (No room for the weak)</a></td>
+                                            <td>Omaholly</td>
+                                            <td>Novel</td>
+                                          </tr>
+                                          <tr>
+                                            <td><a href="OMAHOLLY BOOKS/Ie or ei spelling rules.pdf">Ie or ei Spelling rules</a></td>
+                                            <td>Omaholly</td>
+                                            <td>Spelling Guide</td>
+                                          </tr>
+                                          <tr>
+                                            <td><a href="OMAHOLLY BOOKS/MY FATHER'S LOVE BY OMA HOLLY.pdf">My Fathers Love</a></td>
+                                            <td>Omaholly</td>
+                                            <td>Short Stories</td>
+                                          </tr>
+                                          <tr>
+                                            <td><a href="OMAHOLLY BOOKS/WAITING.pdf">Waiting</a></td>
+                                            <td>Omaholly</td>
+                                            <td>Novel</td>
+                                          </tr>
+                                          <tr>
+                                            <td><a href="OMAHOLLY BOOKS/FAR FROM NORMAL.pdf">Far from Normal</a></td>
+                                            <td>Omaholly</td>
+                                            <td>Play</td>
+                                          </tr>
+                                        </table>
+                                        </div>
+
+                                  <!-- <div class="row">
+                                    <div class="col-md-4">
+                                      <div class="service first1 p-4 bg-base rounded-4 shadow-effect">
+                                        <div class="iconbox">
+                                          <i class="fas fa-image"></i>
+                                        </div>
+                                        <h4 class="mt-4 mb-2 first font">Bussiness at the speed of thought</h4>
+                                        <p class="font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, iusto. Reiciendis incidunt ipsam blanditiis harum aliquam quae odit placeat natus, laudantium quod minus ratione dignissimos, dicta nihil vel rem officiis.</p>
+                                        <a href="#" class="link-custom">Read More</a>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="service first1 p-4 bg-base rounded-4 shadow-effect">
+                                          <div class="iconbox">
+                                            <i class="fas fa-image"></i>
+                                          </div>
+                                          <h4 class="mt-4 mb-2 first font">Bussiness at the speed of thought</h4>
+                                          <p class="font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, iusto. Reiciendis incidunt ipsam blanditiis harum aliquam quae odit placeat natus, laudantium quod minus ratione dignissimos, dicta nihil vel rem officiis.</p>
+                                          <a href="#" class="link-custom">Read More</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="service first1 p-4 bg-base rounded-4 shadow-effect">
+                                          <div class="iconbox">
+                                            <i class="fas fa-image"></i>
+                                          </div>
+                                          <h4 class="mt-4 mb-2 first font">Bussiness at the speed of thought</h4>
+                                          <p class="font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, iusto. Reiciendis incidunt ipsam blanditiis harum aliquam quae odit placeat natus, laudantium quod minus ratione dignissimos, dicta nihil vel rem officiis.</p>
+                                          <a href="#" class="link-custom">Read More</a>
+                                        </div>
+                                    </div>
+                                  </div> -->
+                                  <!-- <div class="row mt-3">
+                                    <div class="col-md-4">
+                                      <div class="service first1 p-4 bg-base rounded-4 shadow-effect">
+                                        <div class="iconbox">
+                                          <i class="fas fa-image"></i>
+                                        </div>
+                                        <h4 class="mt-4 mb-2 first font">Bussiness at the speed of thought</h4>
+                                        <p class="font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, iusto. Reiciendis incidunt ipsam blanditiis harum aliquam quae odit placeat natus, laudantium quod minus ratione dignissimos, dicta nihil vel rem officiis.</p>
+                                        <a href="#" class="link-custom">Read More</a>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="service first1 p-4 bg-base rounded-4 shadow-effect">
+                                          <div class="iconbox">
+                                            <i class="fas fa-image"></i>
+                                          </div>
+                                          <h4 class="mt-4 mb-2 first font">Bussiness at the speed of thought</h4>
+                                          <p class="font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, iusto. Reiciendis incidunt ipsam blanditiis harum aliquam quae odit placeat natus, laudantium quod minus ratione dignissimos, dicta nihil vel rem officiis.</p>
+                                          <a href="#" class="link-custom">Read More</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="service first1 p-4 bg-base rounded-4 shadow-effect">
+                                          <div class="iconbox">
+                                            <i class="fas fa-image"></i>
+                                          </div>
+                                          <h4 class="mt-4 mb-2 first font">Bussiness at the speed of thought</h4>
+                                          <p class="font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, iusto. Reiciendis incidunt ipsam blanditiis harum aliquam quae odit placeat natus, laudantium quod minus ratione dignissimos, dicta nihil vel rem officiis.</p>
+                                          <a href="#" class="link-custom">Read More</a>
+                                        </div>
+                                    </div>
+                                  </div> -->
+                                  <!-- <div class="row mt-3">
+                                    <div class="col-md-4">
+                                      <div class="service first1 p-4 bg-base rounded-4 shadow-effect">
+                                        <div class="iconbox">
+                                          <i class="fas fa-image"></i>
+                                        </div>
+                                        <h4 class="mt-4 mb-2 first font">Bussiness at the speed of thought</h4>
+                                        <p class="font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, iusto. Reiciendis incidunt ipsam blanditiis harum aliquam quae odit placeat natus, laudantium quod minus ratione dignissimos, dicta nihil vel rem officiis.</p>
+                                        <a href="#" class="link-custom">Read More</a>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="service first1 p-4 bg-base rounded-4 shadow-effect">
+                                          <div class="iconbox">
+                                            <i class="fas fa-image"></i>
+                                          </div>
+                                          <h4 class="mt-4 mb-2 first font">Bussiness at the speed of thought</h4>
+                                          <p class="font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, iusto. Reiciendis incidunt ipsam blanditiis harum aliquam quae odit placeat natus, laudantium quod minus ratione dignissimos, dicta nihil vel rem officiis.</p>
+                                          <a href="#" class="link-custom">Read More</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="service first1 p-4 bg-base rounded-4 shadow-effect">
+                                          <div class="iconbox">
+                                            <i class="fas fa-image"></i>
+                                          </div>
+                                          <h4 class="mt-4 mb-2 first font">Bussiness at the speed of thought</h4>
+                                          <p class="font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, iusto. Reiciendis incidunt ipsam blanditiis harum aliquam quae odit placeat natus, laudantium quod minus ratione dignissimos, dicta nihil vel rem officiis.</p>
+                                          <a href="#" class="link-custom">Read More</a>
+                                        </div>
+                                    </div>
+                                  </div> -->
+                                </div>
+                              </section>
+                        </section>
+                        <section class="full-height px-lg-5" id="contact">
+                            <div class="container">
+                              <div class="row justify-content-center text-center" data-aos="fade-up">
+                                <div class="col-lg-8 pb-4">
+                                  <h6 class="text-brand">CONTACT</h6>
+                                  <h1>Lets Get in touch</h1>
+                                </div>
+
+                                <div class="col-lg-8">
+                                  <form action="#" class="row g-lg-3 gy-3">
+                                    <div class="form-group col-12 pb-2">
+                                      <input type="text" class="form-control" placeholder="Enter Your Name">
+                                    </div>
+                                    <div class="form-group col-12 pb-2">
+                                      <input type="email" class="form-control" placeholder="Enter Your Email">
+                                    </div>
+                                    <div class="form-group col-12 pb-2">
+                                      <input type="text" class="form-control" placeholder="Enter Subject">
+                                    </div>
+                                    <div class="form-group col-12 pb-2">
+                                      <textarea name="" class="form-control" placeholder="Enter your message" rows="10"></textarea>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                    </main>
+                    <div class="container">
+                      <footer class="py-3 my-4">
+                        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                          <li class="link-custom"><a href="#home" class="px-2">Home</a></li>
+                          <li class="link-custom"><a href="#features" class="px-2">Features</a></li>
+                          <li class="link-custom"><a href="html/pricing.html" class="px-2">Pricing</a></li>
+                          <li class="link-custom"><a href="html/faqs.html" class="px-2">FAQs</a></li>
+                          <li class="link-custom"><a href="#about" class="px-2">About</a></li>
+                        </ul>
+                        <p class="text-center text-muted">© 2022 Tesminiko, Inc, Complete Scholar int'l school, <i class="fa-brands fa-google text-info" aria-hidden="true"></i> <i class="fa-brands fa-youtube text-danger" aria-hidden="true"></i> <i class="fa-brands fa-google-wallet text-warning" aria-hidden="true"></i></p>
+                      </footer>
+                    </div>
+    <script src="bootstrap/bootstrapjs.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
